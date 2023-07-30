@@ -14,6 +14,7 @@ class AuthenticationBloc extends Cubit<AuthenticationState>{
     required String? name,
     required String? email,
     required String? password,
+
   }
       ){
     emit(SignUpLoadingState());
@@ -38,6 +39,7 @@ class AuthenticationBloc extends Cubit<AuthenticationState>{
   void userCreate({
     required String? name,
     required String? email,
+
     required String? uId,
   }){
     UserModel user = UserModel(
